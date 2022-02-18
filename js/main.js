@@ -12,22 +12,20 @@ function start_1() {
   }
 
   function start_2() {
-    let age = prompt("User yaşını daxil etməlidir");
+    let age = prompt("Yaşınızı daxil edin");
     
-    if(isNaN(age))
+    if(isNaN(age) ||age.indexOf(' ')>=0)
     {
-        alert("Ancaq rəqəm daxil edilməlidir !!!")
+        alert("Ancaq rəqəm daxil edilməlidir boşluq və ya digər simvollar ola bilməz!!!")
         start_2();
-
-
     }
     else
     {
-        if (age != null) 
+        if (age.length>0) 
         {
             if(age<18)
             {
-                alert(" Diqqət !!! siz bu sehifəyə daxil ola bilmərsiniz")
+                alert(" Diqqət !!! siz bu sehifəyə daxil ola bilmərsiniz  ")
             }
             else{
                 alert("Ugurlu giris")
@@ -36,7 +34,34 @@ function start_1() {
         }
         else{
             alert("bos olmaz")
+            start_2();
         }
     }
     
   }
+ 
+  function start3_show(){
+    document.getElementById("person_form").style.display="block"
+  }
+ 
+  
+  function start_3() {
+    var name = document.getElementById("name").value;
+    var surname=document.getElementById("surname").value;
+    var psw=document.getElementById("psw").value;
+
+    let Person=
+    {
+        FirstName:name,
+        SurName:surname,
+        password:psw,
+        fullName: function()
+        {
+          return this.FirstName + " " + this.SurName;
+        }   
+    }
+    
+    document.getElementById("fullname").innerHTML=Person.fullName().toUpperCase().valueOf();
+  }
+  
+  

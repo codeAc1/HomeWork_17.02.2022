@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body id="body">
-    
-    <div  id="task-1">
-        <button id="btn1" onclick="start_1()">Task-1</button>
-    </div>
-    <div id="task-2">
-        <button id="btn2" onclick="start_2()">Task-2</button>
-    </div>
-</body>
-<script src="js/main.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body id="body">
+        <section id="first">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12 Task-1">
+                        <button id="btn1" onclick="start_1()">Task-1</button>
+                    </div>
+                    <div class="col-lg-12 Task-2">
+                        <button id="btn-2" onclick="start_2()">Task-2</button>
+                    </div>
+                    <div class="col-lg-12 Task-3">
+                        <button id="btnshow" onclick="start3_show()">Task-3</button>
+                        <div id="person_form" >
+                            <div class="name">
+                                <input id="name" type="text" placeholder="Name">
+                            </div>
+                            <div class="surname">
+                                <input id="surname" type="text" placeholder="Surname">
+                            </div>
+                            <div class="password">
+                                <input id="psw" type="password" placeholder="password">
+                            </div>
+                            <button id="btn2" onclick="start_3()">Login</button> <br>
+                            <h1 id="fullname"></h1>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    <script src="js/main.js"></script>
 </html>

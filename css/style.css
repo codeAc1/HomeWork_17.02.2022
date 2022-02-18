@@ -1,6 +1,57 @@
-#task-1{
-    width: 20%;
-    background-color: black;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#first{
+    margin: 4rem 0rem;
+    position: relative;
+}
+#first .Task-1,.Task-2,.Task-3 {
+    padding: 4rem 0;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+#person_form{
+   display: none;
+   
+}
+button{
+    background-color: #ffffff;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: red;
+    margin: 1rem;
+    transition: .5s;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.849);
+    color: #fff;
     
 }
+input{
+    color: black;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+#btn2{
+    color: yellowgreen;
+}
+#fullname{
+    
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
+

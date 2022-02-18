@@ -44,7 +44,17 @@ function start3_show() {
         .style
         .display = "block"
 }
+class Human {
+    constructor(name, surname, psw) {
+        this.FirstName = name,
+        this.SurName = surname,
+        this.psw = psw
 
+    }
+    fullName() {
+        return this.FirstName + " " + this.SurName;
+    }
+}
 function start_3() {
     var name = document
         .getElementById("name")
@@ -55,15 +65,7 @@ function start_3() {
     var psw = document
         .getElementById("psw")
         .value;
-
-    let Person = {
-        FirstName: name,
-        SurName: surname,
-        password: psw,
-        fullName: function () {
-            return this.FirstName + " " + this.SurName;
-        }
-    }
+    let Person = new Human(name, surname, psw)
 
     document
         .getElementById("fullname")
